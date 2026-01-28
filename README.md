@@ -2,7 +2,7 @@
 
 > **Disciplina:** Arquitetura Orientada a Serviços (SOA)  
 > **Alunos:** Nagafe de Oliveira Martins,
-              Marcos Vinicius Siqueira Alves
+             > Marcos Vinicius Siqueira Alves
 > **Data:** 28 de Janeiro de 2026
 
 ---
