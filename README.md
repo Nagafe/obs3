@@ -6,9 +6,17 @@
 
 ---
 
-## 1. O Problema
-No cenário atual, os dados de saúde estão fragmentados.
-* Um paciente atendido na **Rede Privada** não tem seu histórico acessível quando chega em uma **UBS (SUS)**.
+## 1. O Desafio: Ecossistema de Saúde Desintegrado
+O maior obstáculo da saúde no Brasil não é a falta de dados, mas a falta de conexão entre as diferentes esferas de atendimento. Hoje, a jornada do paciente é interrompida cada vez que ele muda de instituição.
+
+O nosso desafio é **emplacar a integração total**, unificando quatro universos que hoje operam isolados:
+
+1.  🏥 **Esfera Municipal:** Unidades Básicas (UBS) e UPAs (Porta de entrada).
+2.  🏥 **Esfera Estadual:** Hospitais Regionais e Centros de Referência (Alta complexidade).
+3.  🏥 **Esfera Federal:** Hospitais Universitários e Institutos de Pesquisa.
+4.  🏥 **Esfera Privada:** Clínicas, Laboratórios e Hospitais Particulares.
+
+**O Problema:** Sem uma arquitetura que suporte essa diversidade, o paciente "reinicia" seu histórico a cada atendimento, gerando riscos clínicos e desperdício de recursos.
 * **Riscos:** Interações medicamentosas perigosas, repetição de exames caros e falta de informação em emergências.
 
 ## 2. A Solução: Arquitetura SOA
@@ -31,7 +39,7 @@ Adotamos o padrão **MVC (Model-View-Controller)** no Front-end consumindo servi
 ### Diagrama de Componentes
 > *A aplicação Web atua como orquestradora, buscando dados em paralelo.*
 
-![Diagrama de Componentes](diagrama1.png)
+![Diagrama de Componentes](https://github.com/Nagafe/obs3/blob/main/Diagrama1.png)
 
 
 ---
