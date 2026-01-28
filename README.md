@@ -54,7 +54,7 @@ Para garantir performance e desacoplamento:
 ### Fluxo de Dados (Diagrama de Sequência)
 > *O Médico busca pelo CPF -> O sistema resolve o UUID -> Busca dados clínicos em paralelo.*
 
-![Diagrama de Sequência](diagrama2.png)
+![Diagrama de Sequência](https://github.com/Nagafe/obs3/blob/main/Diagrama2.png)
 
 ---
 
