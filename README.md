@@ -62,6 +62,19 @@ Para garantir performance e desacoplamento:
 Implementamos uma prova de conceito (PoC) da Camada de Controladores.
 A demonstração abaixo simula a **latência de rede** e a **montagem assíncrona** do prontuário, provando que os dados vêm de fontes diferentes.
 
+
+---
+## 6. Conclusão e Resultados
+O projeto SUHS valida a aplicação da **Arquitetura Orientada a Serviços (SOA)** como a solução viável para o problema histórico da interoperabilidade na saúde brasileira.
+
+A prova de conceito demonstrou que:
+
+1.  **Integração Viável:** É possível conectar sistemas heterogêneos das quatro esferas (**Municipal, Estadual, Federal e Privada**) sem exigir que elas substituam seus softwares legados, utilizando **REST APIs** como camada de tradução universal.
+2.  **Segurança e Autonomia:** O uso de **UUIDs** e bancos de dados isolados respeita a governança de cada instituição, garantindo que o prontuário seja único mesmo vindo de fontes diferentes.
+3.  **Resiliência:** A arquitetura descentralizada provou ser robusta; falhas em serviços periféricos (ex: Vacinas) não derrubam o atendimento de emergência, garantindo a continuidade do cuidado.
+
+**Em resumo:** O SUHS transforma a fragmentação de dados em um ecossistema colaborativo, onde a tecnologia atua diretamente na prevenção de erros médicos e na otimização de recursos públicos e privados.
+
 ### 🚀 [CLIQUE AQUI PARA ACESSAR O SISTEMA AO VIVO](https://nagafe.github.io/obs3/)
 
 ---
