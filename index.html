@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUHS - Acesso Médico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light d-flex align-items-center justify-content-center vh-100">
+
+    <div class="card shadow-lg border-0" style="max-width: 450px; width: 100%;">
+        <div class="card-body p-5 text-center">
+            <div class="mb-4">
+                <h1 class="text-primary fw-bold">SUHS</h1>
+                <p class="text-muted">Sistema Unificado de Histórico de Saúde</p>
+                <span class="badge bg-success mb-3">Ambiente SOA Integrado</span>
+            </div>
+
+            <form id="formBusca">
+                <div class="form-floating mb-3 text-start">
+                    <input type="text" class="form-control" id="cpfInput" placeholder="CPF" value="123.456.789-00" required>
+                    <label for="cpfInput">CPF do Paciente</label>
+                </div>
+                
+                <button type="submit" class="btn btn-primary w-100 btn-lg py-3 fw-bold shadow-sm" id="btnBusca">
+                    CONSULTAR PRONTUÁRIO
+                </button>
+            </form>
+
+            <div id="loadingArea" class="d-none mt-4">
+                <div class="spinner-border text-primary" role="status"></div>
+                <p class="small text-muted mt-2">
+                    Conectando ao <strong>Identity Service</strong>...<br>
+                    Resolvendo UUID Global...
+                </p>
+            </div>
+        </div>
+        <div class="card-footer bg-white text-center py-3">
+            <small class="text-muted">Protótipo Funcional - Atividade 02</small>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('formBusca').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simula o Controller de Busca
+            document.getElementById('btnBusca').classList.add('d-none');
+            document.getElementById('loadingArea').classList.remove('d-none');
+
+            // Delay de 1.5s para simular rede
+            setTimeout(() => {
+                // Redireciona para o prontuário passando o UUID simulado
+                window.location.href = 'prontuario.html?uuid=a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11';
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
